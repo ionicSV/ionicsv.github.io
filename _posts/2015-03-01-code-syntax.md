@@ -1,28 +1,30 @@
 ---
-title: Code Syntax
+title: Estructura de un App
 ---
-To insert highlight code inside of a post, it's enough to use some specific tags, has directly described into the [Jekyll documentation](http://jekyllrb.com/docs/templates/#code-snippet-highlighting). In this way the code will be included into a ``.highlight`` CSS class and will be highlight according to the [syntax.scss](https://github.com/mojombo/tpw/blob/master/css/syntax.css) file. This is the standard style adopted by **Github** to highlight the code. 
+En este tutorial crearemos el clasico "hola mundo", algo de costumbre siempre que vamos a iniciar a programar o conocer un nuevo leguaje pero esto nos servira para orientarnos un poco sobre la estructura de unproyecto en Ionic, asi que vamos! 
 
-This is a CSS example:
-{% highlight css linenos %}
+Estructura basica de HTML:
+{% highlight html linenos %}
 
-body {
-  background-color: #fff;
-  }
-
-h1 {
-  color: #ffaa33;
-  font-size: 1.5em;
-  }
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link href="http://code.ionicframework.com/1.0.0/css/ionic.min.css" rel="stylesheet">
+    <script src="http://code.ionicframework.com/1.0.0/js/ionic.bundle.js"></script>
+  </head>
+  <body>
+	Hello World!
+  </body>
+</html>
 
 {% endhighlight %}
 
-And this is a HTML example, with a linenumber:
+Hasta esta estapa solo tendriamos una simple web con un "hello word" veamos lo que en si crea la magia para una app en ionic:
 {% highlight html linenos %}
 
-<html>
-  <a href="example.com">Example</a>
-</html>
+<body ng-app="ionicApp">
 
 {% endhighlight %}
 
